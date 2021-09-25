@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>巡回　2021-09-19 アツシ</title>
+<base target="_blank">
+<style type="text/css">
+<!--
+	body {
+		background-color: #282A36;
+		color: orange;
+		font-size: 120%;
+		line-height:30px;
+	}
+	a:link, a:visited, a:active {	color: #63a0e9;}
+	a:hover{			color: #a1d8e2;}
+	.box_1 {position: absolute; top: 30px; left: 30px;}
+-->
+</style>
+<script>
+function openURL() {
+	var list =  document.links;  				// このhtml内のリンクのリスト
+	var s = "";                  				// 出力用バッファ
+	for( var i=0 ; i < list.length ; i++ ) {
+		if("no" != list[i].name){
+			open(list[i]);				// サイトを開く
+			s += (i+1) + ':' + list[i] + '\n';
+		}
+	}
+//	alert( s );						// デバッグ
+
+}
+</script>
+</head>
+
+<body onload="openURL();">
+<div class="box_1">
+<pre>
+	■ニュース
+	<a href="https://www.yahoo.co.jp/">Yahoo</a>
+	<a href="https://news.yahoo.co.jp/topics">Yahoo</a>
+	<a href="https://www.asahi.com/">朝日</a>
+	<a href="https://www.nikkei.com/">日経</a>
+	<a href="https://www.2nn.jp/">２NN</a>
+	<a href="https://edition.cnn.com/">CNN</a>
+	<hr>
+	■英語
+	<a href="https://www.xn--p8ss4vpnwilc.jp/"				name="no">毎日1分！英字新聞</a>
+</pre>
+</div>
+</body>
+</html>
